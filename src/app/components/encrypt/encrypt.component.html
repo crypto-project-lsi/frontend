@@ -1,0 +1,10 @@
+<div>
+    <h2>Chiffrement</h2>
+    <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Entrer un message</label>
+        <textarea class="form-control" [(ngModel)]="message" rows="3"></textarea>
+    </div>
+    <button (click)="encryptMessage()" class="btn btn-outline-success">Chiffrer</button>
+    <pre *ngIf="ciphertext">Message chiffré : {{ ciphertext }}</pre>
+</div>
+  
